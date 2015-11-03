@@ -15,7 +15,14 @@ users = []
 
   users_hash = {"first name" => first_name, "last name" => last_name, "email" => email, "account number" => account_number}
   users << users_hash
-  puts users[0]["first name"]
+  
+  users.each do |user|   
+  user.each do |h|      
+     h.each do |key,value| 
+       puts "#{key} => #{value}"
+     end
+  end
+end
   
 end
 
