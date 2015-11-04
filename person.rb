@@ -26,4 +26,14 @@ person = {first_name: first_name, last_name: last_name, mood: mood, age: age, oc
 puts person
 
 class Person
+  attr_accessor :first_name, :last_name, :mood, :age, :occupation, :job
+
+  def initialize(first_name, last_name, mood, age, occupation, job)
+
+  end
+end
+
+person = Person.new
+
+
 
